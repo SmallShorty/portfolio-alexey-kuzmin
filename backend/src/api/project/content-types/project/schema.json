@@ -1,0 +1,91 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "cover": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "stage": {
+      "type": "enumeration",
+      "enum": [
+        "Постпродакшен",
+        "Релиз"
+      ]
+    },
+    "release_date": {
+      "type": "date"
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "directors": {
+      "displayName": "directors",
+      "type": "component",
+      "repeatable": true,
+      "component": "name.directors",
+      "required": false
+    },
+    "producers": {
+      "displayName": "producers",
+      "type": "component",
+      "repeatable": true,
+      "component": "name.producers",
+      "required": false
+    },
+    "timestamp": {
+      "type": "component",
+      "repeatable": false,
+      "component": "timestamp.timestamp"
+    },
+    "genre": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::genre-enum.genre-enum",
+      "inversedBy": "projects"
+    },
+    "roles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::role-enum.role-enum",
+      "inversedBy": "projects"
+    }
+  }
+}

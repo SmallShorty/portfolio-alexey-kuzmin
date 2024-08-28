@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_name_directors",
+  "info": {
+    "displayName": "directors"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

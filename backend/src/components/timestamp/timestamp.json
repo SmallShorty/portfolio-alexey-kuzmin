@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_timestamp_timestamps",
+  "info": {
+    "displayName": "Timestamp",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "start": {
+      "type": "integer"
+    },
+    "end": {
+      "type": "integer"
+    }
+  }
+}

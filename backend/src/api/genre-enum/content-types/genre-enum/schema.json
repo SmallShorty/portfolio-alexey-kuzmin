@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "genre_enums",
+  "info": {
+    "singularName": "genre-enum",
+    "pluralName": "genre-enums",
+    "displayName": "Genre_enum"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project",
+      "mappedBy": "genre"
+    }
+  }
+}

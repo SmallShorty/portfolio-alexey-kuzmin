@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_me_sections",
+  "info": {
+    "singularName": "about-me-section",
+    "pluralName": "about-me-sections",
+    "displayName": "About me Section",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "experience_date": {
+      "type": "date"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "cover": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

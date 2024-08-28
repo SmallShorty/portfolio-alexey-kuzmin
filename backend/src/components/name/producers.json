@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_name_producers",
+  "info": {
+    "displayName": "producers"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
